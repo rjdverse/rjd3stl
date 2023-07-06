@@ -10,7 +10,8 @@ Depends:
   R (>= 3.6.0)
 Imports:
   rJava (>= 1.0-6),
-  rjd3toolkit (>= 3.0.1)
+  rjd3toolkit (>= 3.0.1),
+  rjd3highfreq (>= 1.0.0)
 SystemRequirements: Java JRE 17 or higher
 License: EUPL
 URL: https://github.com/jdemetra/rjd3stl
