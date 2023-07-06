@@ -3,6 +3,6 @@
 export(istl)
 export(loess)
 export(mstl)
-export(stl)
+export(stlplus)
 import(rJava)
 import(rjd3toolkit)

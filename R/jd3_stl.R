@@ -18,9 +18,9 @@
 #' @export
 #'
 #' @examples 
-#' q<-rjd3stl::stl(rjd3toolkit::ABS$X0.2.09.10.M, 12)
+#' q<-rjd3stl::stlplus(rjd3toolkit::ABS$X0.2.09.10.M, 12)
 #' decomp<-q$decomposition
-stl<-function(y, period, multiplicative=TRUE, swindow=7, twindow=0, ninnerloop=1, nouterloop=15, nojump=FALSE, weight.threshold=0.001, 
+stlplus<-function(y, period, multiplicative=TRUE, swindow=7, twindow=0, ninnerloop=1, nouterloop=15, nojump=FALSE, weight.threshold=0.001, 
     weight.function=c('BIWEIGHT', 'UNIFORM', 'TRIANGULAR', 'EPANECHNIKOV', 'TRICUBE', 'TRIWEIGHT')){
   weight.function=match.arg(weight.function)
   
@@ -159,7 +159,7 @@ istl<-function(y, periods, multiplicative=TRUE, swindows=NULL, twindows=NULL, ni
 #' @export
 #'
 #' @examples
-#' q<-rjd3stl::stl(rjd3toolkit::ABS$X0.2.09.10.M, 12)
+#' q<-rjd3stl::stlplus(rjd3toolkit::ABS$X0.2.09.10.M, 12)
 #' decomp<-q$decomposition
 #' t<-decomp[,'t']
 #' matplot(cbind(t,loess(t, 121)), type='l')
