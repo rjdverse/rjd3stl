@@ -6,26 +6,34 @@
 #' @param y input time series.
 #' @param period period, any positive real number.
 #' @param multiplicative Boolean indicating if the decomposition mode is multiplicative (TRUE).
-#' @param swindow length of seasonal filter.
-#' @param twindow length of trend filter.
+#' @param swindow length of the seasonal filter.
+#' @param twindow length of the trend filter.
+#' @param lwindow length of the filter used to remove the trend of the seasonal
+#' @param sjump number of jumps in the computation of the seasonal
+#' @param tjump number of jumps in the computation of the trend
+#' @param ljump number of jumps in the computation of the trend in the seasonal
 #' @param ninnerloop Number of inner loops
 #' @param nouterloop Number of outer loops (computation of robust weights) 
-#' @param nojump 
 #' @param weight.threshold Weights threshold (in [0, 0.3])
 #' @param weight.function weights function
+#' @param legacy use of the (bugged) legacy MAD
 #'
 #' @return
 #' @export
-#'
 #' @examples 
-#' q<-rjd3stl::stl(rjd3toolkit::ABS$X0.2.09.10.M, 12)
+#' q<-rjd3stl::stlplus(rjd3toolkit::ABS$X0.2.09.10.M, 12)
 #' decomp<-q$decomposition
-stl<-function(y, period, multiplicative=TRUE, swindow=7, twindow=0, ninnerloop=1, nouterloop=15, nojump=FALSE, weight.threshold=0.001, 
-    weight.function=c('BIWEIGHT', 'UNIFORM', 'TRIANGULAR', 'EPANECHNIKOV', 'TRICUBE', 'TRIWEIGHT')){
+stlplus<-function(y, period, multiplicative=TRUE, swindow=7, twindow=0, lwindow=0, sjump=0, tjump=0, ljump=0, ninnerloop=1, nouterloop=15, weight.threshold=0.001, 
+    weight.function=c('BIWEIGHT', 'UNIFORM', 'TRIANGULAR', 'EPANECHNIKOV', 'TRICUBE', 'TRIWEIGHT'), legacy=FALSE){
   weight.function=match.arg(weight.function)
   
-  jrslt<-.jcall("jdplus/stl/base/r/StlDecomposition", "Ljdplus/toolkit/base/api/math/matrices/Matrix;", "stl", as.numeric(y), as.integer(period), as.logical(multiplicative), as.integer(swindow), as.integer(twindow), 
-                as.integer(ninnerloop), as.integer(nouterloop), as.logical(nojump), as.numeric(weight.threshold), as.character(weight.function))
+  jrslt<-.jcall("jdplus/stl/base/r/StlDecomposition", "Ljdplus/toolkit/base/api/math/matrices/Matrix;", "stl", 
+                as.numeric(y), as.integer(period), as.logical(multiplicative), 
+                as.integer(swindow), as.integer(twindow), as.integer(lwindow), 
+                as.integer(sjump), as.integer(tjump), as.integer(ljump),
+                as.integer(ninnerloop), as.integer(nouterloop), 
+                as.numeric(weight.threshold), as.character(weight.function), 
+                as.logical(legacy))
   m<-rjd3toolkit::.jd2r_matrix(jrslt)
   colnames(m)<-c('y', 'sa', 't', 's', 'i', 'fit', 'weights')
   parameters<-list(
@@ -159,7 +167,7 @@ istl<-function(y, periods, multiplicative=TRUE, swindows=NULL, twindows=NULL, ni
 #' @export
 #'
 #' @examples
-#' q<-rjd3stl::stl(rjd3toolkit::ABS$X0.2.09.10.M, 12)
+#' q<-rjd3stl::stlplus(rjd3toolkit::ABS$X0.2.09.10.M, 12)
 #' decomp<-q$decomposition
 #' t<-decomp[,'t']
 #' matplot(cbind(t,loess(t, 121)), type='l')
