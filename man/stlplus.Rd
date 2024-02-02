@@ -11,6 +11,9 @@ stlplus(
   swindow = 7,
   twindow = 0,
   lwindow = 0,
+  sdegree = 0,
+  tdegree = 1,
+  ldegree = 1,
   sjump = 0,
   tjump = 0,
   ljump = 0,
@@ -35,6 +38,12 @@ stlplus(
 
 \item{lwindow}{length of the filter used to remove the trend of the seasonal}
 
+\item{sdegree}{degree of the seasonal local polynomial (0 or 1)}
+
+\item{tdegree}{degree of the trend local polynomial (0 or 1)}
+
+\item{ldegree}{degree of the low-pass local polynomial (0 or 1)}
+
 \item{sjump}{number of jumps in the computation of the seasonal}
 
 \item{tjump}{number of jumps in the computation of the trend}
@@ -50,6 +59,9 @@ stlplus(
 \item{weight.function}{weights function}
 
 \item{legacy}{use of the (bugged) legacy MAD}
+}
+\value{
+A matrix with the following series: y, sa, t, s, i, fit, weights
 }
 \description{
 Perform an STL like (based on Loess) decomposition on any periodicity
