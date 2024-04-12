@@ -17,7 +17,7 @@ Remotes:
   github::rjdemetra/rjd3highfreq 
 SystemRequirements: Java JRE 17 or higher
 License: EUPL
-URL: https://github.com/jdemetra/rjd3stl
+URL: https://github.com/jdemetra/rjd3stl, https://rjdemetra.github.io/rjd3stl/
 LazyData: TRUE
 Suggests:
     knitr,
