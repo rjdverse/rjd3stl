@@ -5,4 +5,5 @@
 ^pkgdown$
 ^\.github$
 ^LICENSE$
-^README\.Rmd$
+^README.Rmd$
+^.lintr$
