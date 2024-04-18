@@ -9,10 +9,6 @@ loess(y, window, degree = 1, jump = 0)
 \arguments{
 \item{y}{input time series.}
 
-\item{window}{}
-
-\item{degree}{}
-
 \item{jump}{}
 }
 \description{
