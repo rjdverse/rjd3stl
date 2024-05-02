@@ -1,13 +1,14 @@
 Package: rjd3stl
 Type: Package
-Title: Interface to 'JDemetra+ 3.0' Seasonal Adjustment Software
+Title: R Interface to 'JDemetra+ 3.x' Seasonal Adjustment Software
 Version: 2.1.1
 Authors@R: c(
   person("Jean", "Palate", role = c("aut", "cre"),
-                email = "jean.palate@nbb.be"))
-Description: Interface around 'JDemetra+ 3.x' sa-toolkit (<https://github.com/jdemetra/jdemetra-core>), STACE project 
+                email = "palatejean@gmail.com"))
+Description: R Interface to 'JDemetra+ 3.x' (<https://github.com/jdemetra>) time series analysis software.
+ It provides functions allowing to decompose a time series, including high-frequency data with multiple periodicities.
 Depends:
-  R (>= 3.6.0)
+  R (>= 4.1.0)
 Imports:
   rJava (>= 1.0-6),
   rjd3toolkit (>= 3.2.2),
@@ -23,7 +24,7 @@ Suggests:
     knitr,
     rmarkdown
 RoxygenNote: 7.3.1
-BugReports: https://github.com/jdemetra/rjdemetra3/issues
+BugReports: https://github.com/rjdemetra/rjd3stl/issues
 Encoding: UTF-8
 Collate: 
     'jd3_stl.R'
