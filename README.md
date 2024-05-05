@@ -19,16 +19,16 @@ To get the current stable version (from the latest release):
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("rjdemetra/rjd3toolkit@*release")
-remotes::install_github("rjdemetra/rjd3highfreq")
-remotes::install_github("rjdemetra/rjd3stl@*release")
+remotes::install_github("rjdverse/rjd3toolkit@*release")
+remotes::install_github("rjdverse/rjd3highfreq")
+remotes::install_github("rjdverse/rjd3stl@*release")
 ```
 
 To get the current development version from GitHub:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("rjdemetra/rjd3stl")
+remotes::install_github("rjdverse/rjd3stl")
 ```
 
 ## Package Maintenance and contributing
