@@ -1,6 +1,6 @@
 Package: rjd3stl
 Type: Package
-Title: R Interface to 'JDemetra+ 3.x' Seasonal Adjustment Software
+Title: R Interface to 'JDemetra+ 3.x' time series analysis software.
 Version: 2.1.1
 Authors@R: c(
   person("Jean", "Palate", role = c("aut", "cre"),
@@ -14,17 +14,17 @@ Imports:
   rjd3toolkit (>= 3.2.2),
   rjd3highfreq (>= 2.1.0)
 Remotes:
-  github::rjdemetra/rjd3toolkit, 
-  github::rjdemetra/rjd3highfreq 
+  github::rjdverse/rjd3toolkit, 
+  github::rjdverse/rjd3highfreq 
 SystemRequirements: Java (>= 17)
 License: EUPL
-URL: https://github.com/jdemetra/rjd3stl, https://rjdemetra.github.io/rjd3stl/
+URL: https://github.com/jdemetra/rjd3stl, https://rjdverse.github.io/rjd3stl/
 LazyData: TRUE
 Suggests:
     knitr,
     rmarkdown
 RoxygenNote: 7.3.1
-BugReports: https://github.com/rjdemetra/rjd3stl/issues
+BugReports: https://github.com/rjdverse/rjd3stl/issues
 Encoding: UTF-8
 Collate: 
     'jd3_stl.R'
