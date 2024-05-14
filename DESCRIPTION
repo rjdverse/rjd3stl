@@ -1,6 +1,6 @@
 Package: rjd3stl
 Type: Package
-Title: R Interface to 'JDemetra+ 3.x' Seasonal Adjustment Software
+Title: R Interface to 'JDemetra+ 3.x' time series analysis software.
 Version: 2.1.1
 Authors@R: c(
   person("Jean", "Palate", role = c("aut", "cre"),
