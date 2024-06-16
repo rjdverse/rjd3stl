@@ -181,5 +181,5 @@ loess<-function(y, window, degree=1, jump=0){
     stop("Unsupported degree")
   if (jump <0)
     stop("jump should be positive")
-  return (.jcall("jdplus/stl/base/r/StlDecomposition", "[D", "loess", as.numeric(y), as.integer(window), as.integer(degree), as.integer(jump)))
+  return(.jcall("jdplus/stl/base/r/StlDecomposition", "[D", "loess", as.numeric(y), as.integer(window), as.integer(degree), as.integer(jump)))
 }
