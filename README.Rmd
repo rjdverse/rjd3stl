@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 # rjd3stl
 
 <!-- badges: start -->
+[![Mentioned in Awesome Official Statistics ](https://awesome.re/mentioned-badge.svg)](http://www.awesomeofficialstatistics.org)
 <!-- badges: end -->
 
 R interface giving access to STL (Loess based time series decomposition) as implemented in JDemetra+ v3.x.
