@@ -27,4 +27,5 @@ Title
 \examples{
 q<-rjd3stl::istl(rjd3toolkit::ABS$X0.2.09.10.M, c(12, 25))
 decomp<-q$decomposition
+matplot(decomp[,c(1:3)], type='l')
 }
