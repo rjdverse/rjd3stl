@@ -1,6 +1,6 @@
 # Changelog
 
-## rjd3stl 2.3.0
+## rjd3stl 2.4.0
 
 All notable changes to this project will be documented in this file.
 
