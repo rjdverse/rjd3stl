@@ -14,7 +14,6 @@ Imports:
   rjd3toolkit (>= 3.6.0),
   rjd3highfreq (>= 2.4.0)
 Remotes: 
-    github::rjdverse/rjd3toolkit,
     github::rjdverse/rjd3highfreq
 SystemRequirements: Java (>= 17)
 License: file LICENSE
