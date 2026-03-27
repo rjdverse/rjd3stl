@@ -1,11 +1,11 @@
-# rjd3stl
+# {rjd3stl}
 
 R interface giving access to STL (Loess based time series decomposition)
 as implemented in JDemetra+ v3.x.
 
 ## Installation
 
-Running rjd3 packages requires **Java 17 or higher**. How to set up such
+Running rjd3 packages requires **Java 21 or higher**. How to set up such
 a configuration in R is explained
 [here](https://jdemetra-new-documentation.netlify.app/#Rconfig)
 
@@ -17,8 +17,6 @@ To get the current stable version (from the latest release):
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("rjdverse/rjd3toolkit@*release")
-remotes::install_github("rjdverse/rjd3highfreq@*release")
 remotes::install_github("rjdverse/rjd3stl@*release")
 ```
 
@@ -30,7 +28,7 @@ install.packages("rjd3stl", repos = c("https://rjdverse.r-universe.dev", "https:
 
 ### Development version
 
-You can install the development version of **rjd3stl** from
+You can install the development version of **{rjd3stl}** from
 [GitHub](https://github.com/) with:
 
 ``` r

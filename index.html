@@ -47,15 +47,15 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="rjd3stl">rjd3stl<a class="anchor" aria-label="anchor" href="#rjd3stl"></a>
+<div class="page-header"><h1 id="rjd3stl">{rjd3stl}<a class="anchor" aria-label="anchor" href="#rjd3stl"></a>
 </h1></div>
 <!-- badges: start -->
-<!-- badges: end -->
+
 <p>R interface giving access to STL (Loess based time series decomposition) as implemented in JDemetra+ v3.x.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>Running rjd3 packages requires <strong>Java 17 or higher</strong>. How to set up such a configuration in R is explained <a href="https://jdemetra-new-documentation.netlify.app/#Rconfig" class="external-link">here</a></p>
+<p>Running rjd3 packages requires <strong>Java 21 or higher</strong>. How to set up such a configuration in R is explained <a href="https://jdemetra-new-documentation.netlify.app/#Rconfig" class="external-link">here</a></p>
 <div class="section level3">
 <h3 id="latest-release">Latest release<a class="anchor" aria-label="anchor" href="#latest-release"></a>
 </h3>
@@ -65,8 +65,6 @@
 </ul>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"rjdverse/rjd3toolkit@*release"</span><span class="op">)</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"rjdverse/rjd3highfreq@*release"</span><span class="op">)</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"rjdverse/rjd3stl@*release"</span><span class="op">)</span></span></code></pre></div>
 <ul>
 <li>From <a href="https://rjdverse.r-universe.dev/rjd3stl" class="external-link">r-universe</a>:</li>
@@ -77,7 +75,7 @@
 <div class="section level3">
 <h3 id="development-version">Development version<a class="anchor" aria-label="anchor" href="#development-version"></a>
 </h3>
-<p>You can install the development version of <strong>rjd3stl</strong> from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>You can install the development version of <strong>{rjd3stl}</strong> from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"rjdverse/rjd3stl"</span><span class="op">)</span></span></code></pre></div>
@@ -125,7 +123,12 @@
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/SNStatComp/awesome-official-statistics-software" class="external-link"><img src="https://awesome.re/mentioned-badge.svg" alt="Mentioned in Awesome Official Statistics"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
