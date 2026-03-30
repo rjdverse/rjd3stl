@@ -1,5 +1,5 @@
 #' @import rJava
-#' @import rjd3toolkit
+#' @import rjd3xjars
 
 .onLoad <- function(libname, pkgname) {
     result <- .jpackage(pkgname, lib.loc = libname)
