@@ -7,7 +7,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/rjdverse/rjd3stl/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/rjdverse/rjd3stl/blob/v2.4.1/DESCRIPTION)
 
 Palate J (2026). *rjd3stl: R Interface to 'JDemetra+ 3.x' time series
 analysis software*. R package version 2.4.1,
