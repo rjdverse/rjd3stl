@@ -11,7 +11,7 @@
 	<description>Usage: mvn -Pcopy-jars</description>
 
 	<properties>
-		<jdplus-incubator.version>2.4.0</jdplus-incubator.version>
+		<jdplus-incubator.version>2.4.1</jdplus-incubator.version>
 	</properties>
 
 	<dependencies>
@@ -20,18 +20,6 @@
 			<artifactId>jdplus-stl-base-r</artifactId>
 			<version>${jdplus-incubator.version}</version>
 			<exclusions>
-				<exclusion>
-					<groupId>*</groupId>
-					<artifactId>jdplus-toolkit-base-api</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>*</groupId>
-					<artifactId>jdplus-toolkit-base-core</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>*</groupId>
-					<artifactId>jdplus-toolkit-base-r</artifactId>
-				</exclusion>
 				<exclusion>
 					<groupId>*</groupId>
 					<artifactId>jdplus-highfreq-base-api</artifactId>
